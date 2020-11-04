@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
@@ -19,12 +20,15 @@ namespace BookStore.Pages
 
         public void OnGet()
         {
+            HttpRequest request = HttpContext.Request;
+
             List<String> list = new List<String>();
             list.Add("first value");
             list.Add("second value");
             list.Add("third value");
             list.Add("four value");
             list.Add("5 value");
+
 
 
             int[] arr = new int[5] { 1, 2, 3, 4, 5 };
