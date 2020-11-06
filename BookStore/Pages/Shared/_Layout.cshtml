@@ -12,33 +12,39 @@
     <div class="wrapper">
         <div class="container">
             <div class="header">
-                <div class="header__logo">
-                <img src="~/img/TestImg.jpg" alt="Something" />
+                <div class="header__row">
+                    <div class="header__logo">
+                        <img src="#" alt="Something" />
+                    </div>
+                    <nav class="header_menu">
+                        <ul class="menu_list">
+                            <li class="list_item"><a href="#">1</a></li>
+                            <li class="list_item"><a href="#">2</a></li>
+                            <li class="list_item"><a href="#">3</a></li>
+                            <li class="list_item"><a href="#">4</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header_search">
+                        <form>
+                            <input type="search" value="search" />Search
+                        </form>
+                    </div>
                 </div>
-                <nav class="header_menu">
-                    <ul class="menu_list">
-                        <li class="list_item">1</li>
-                        <li class="list_item">2</li>
-                        <li class="list_item">3</li>
-                        <li class="list_item">4</li>
-                    </ul>
-                </nav>
             </div>
         </div>
-    </div>
-    <div></div>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 - BookStore - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
         </div>
-    </footer>
 
+        <footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2020 - BookStore - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            </div>
+        </footer>
+    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     @*<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@ 
     <script src="~/js/site.js" asp-append-version="true"></script>
