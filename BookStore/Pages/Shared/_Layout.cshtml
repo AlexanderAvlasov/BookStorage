@@ -8,29 +8,33 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-
-    <div class="wrapper">
-        <div class="container">
-            <div class="header">
-                <div class="header__logo">
-                <img src="~/img/TestImg.jpg" alt="Something" />
-                </div>
-                <nav class="header_menu">
-                    <ul class="menu_list">
-                        <li class="list_item">1</li>
-                        <li class="list_item">2</li>
-                        <li class="list_item">3</li>
-                        <li class="list_item">4</li>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">BookStore</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                        </li>
                     </ul>
-                </nav>
+                </div>
             </div>
-        </div>
-    </div>
-    <div></div>
+        </nav>
+    </header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
+
+
     </div>
 
     <footer class="border-top footer text-muted">
