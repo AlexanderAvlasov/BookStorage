@@ -26,6 +26,12 @@ namespace BookStore
             return "value= "+id;
         }
 
+        [HttpGet("GetBookList")]
+        public List<Book> GetBookList() {
+            BookRepository br = new BookRepository();
+            return br.BooksCollection;
+        }
+
 
         // POST api/<BooksController>
         [HttpPost]
