@@ -34,7 +34,7 @@ namespace BookStore.Pages
             int[] arr = new int[5] { 1, 2, 3, 4, 5 };
             int[] arr2 = { 1, 2, 3, 4, 5 };
 
-            ViewData["Title1"] = "Hi shark";
+            ViewData["Title1"] = "";
         }
     }
 }
