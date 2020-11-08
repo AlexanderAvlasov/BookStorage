@@ -9,7 +9,6 @@ $(document).ready(async () => {
     var cbFunction = async function(resp) {
         console.log("Processing fetch");
         var text = await resp.json();
-        alert(text);
     }
 
     fetch('https://localhost:44310/api/Books').then(cbFunction);
