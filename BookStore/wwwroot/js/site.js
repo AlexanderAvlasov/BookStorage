@@ -17,3 +17,19 @@ $(document).ready(async () => {
 
 }); 
 
+
+// Carousel for General page
+//with jQuery
+	 //  $(document).ready(function(){
+  //   $('.carousel').carousel();
+  // });
+
+
+	  // Send 
+$(document).ready(function(){
+	$('#button').click(function(){
+		$.getJSON('/api/Books/GetBookList', {} , function(json){
+			$('#bookName')[0].innerText = json[0].name;
+		});
+	});
+});
