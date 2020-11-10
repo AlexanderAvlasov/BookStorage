@@ -88,6 +88,13 @@ width: 1200px;
 margin: 0 auto ;
 } 
 
+.nav_left{
+      background: #f0f0f0;
+    padding: 10px;
+    width: 300px;
+    float: left;
+}
+
 /*Foooter*/
 .footer {
   position: absolute;
