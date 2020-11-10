@@ -2,8 +2,56 @@
 @model BookStore.Pages.AdminModel
 @{
 }
+<style>
+    #btSaveBook {
+        margin-bottom:10px;
+    }
+</style>
 
-<div class="container-fluid">
-    <div style="height:400px"></div>
+        <div class="col s6">
+            <form>
+                <div class="form-group">
+                    <label for="BookName">Book name</label>
+                    <input type="text" class="form-control" id="BookName" placeholder="Enter book name">
+                </div>
+                <div class="form-group">
+                    <label for="BookAuthor">Author</label>
+                    <input type="text" class="form-control" id="BookAuthor" placeholder="Book author">
+                </div>
+                <div class="form-group">
+                    <label for="BookPages">Pages total</label>
+                    <input type="text" class="form-control" id="BookPages" placeholder="Pages total">
+                </div>
 
-</div>
+                <button id="btSaveBook" type="submit" class="btn btn-primary">Save book</button>
+
+
+            </form>
+        </div>
+
+        <div class="col s6">
+            <table width="200" border="1">
+                <tbody>
+                    <tr>
+                        <th scope="col">&nbsp;</th>
+                        <th scope="col">&nbsp;</th>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
