@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[BookServerInfo]
+(
+	[Id] INT NOT NULL PRIMARY KEY, 
+    [File] VARBINARY(MAX) NULL, 
+    [Img] VARBINARY(MAX) NULL
+)
