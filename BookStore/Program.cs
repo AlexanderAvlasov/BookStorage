@@ -14,8 +14,6 @@ namespace BookStore
     {
         public static void Main(string[] args)
         {
-
-            var con = new DataAccesLier.Connection();
             CreateHostBuilder(args).Build().Run();
 
         }

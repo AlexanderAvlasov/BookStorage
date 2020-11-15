@@ -27,7 +27,6 @@ namespace BookStore
             services.AddControllers();
             services.AddSwaggerGen();
 
-
         }
 
         public void CreateTestBooks() { 
@@ -37,6 +36,9 @@ namespace BookStore
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+            var con = new DataAccesLier.Connection();
+            
             app.UseSwagger();
 
             // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
