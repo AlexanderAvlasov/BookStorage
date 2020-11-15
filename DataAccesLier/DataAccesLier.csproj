@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="DB\BookStore.db-journal" />
+    <None Remove="Resources\DB\BookStore.db-journal" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,10 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="DB\BookStore.db">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="DB\BookStore.mdf">
+    <None Update="Resources\**">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

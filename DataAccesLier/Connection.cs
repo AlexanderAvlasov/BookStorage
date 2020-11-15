@@ -10,7 +10,7 @@ namespace DataAccesLier
         public Connection()
         {
             //var ds = "Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Alexander\source\repos\BookStorage\DataAccesLier\DB\BookStore.mdf;Integrated Security=True";
-            var con = new SQLiteConnection(@"data source=DB/BookStore.db");
+            var con = new SQLiteConnection(@"data source=Resources/DB/BookStore.db");
             con.Open();
             var cmd = new SQLiteCommand("SELECT * FROM books");
             cmd.Connection = con;
