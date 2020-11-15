@@ -5,6 +5,10 @@
     <UserSecretsId>a6008e1b-c8cc-4fb7-af68-81be12d73821</UserSecretsId>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>bin\Debug\netcoreapp3.1\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <Folder Include="Resources\Books\" />
   </ItemGroup>
