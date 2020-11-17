@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using CoreLogic.Model;
+using System.Collections.Generic;
 
-namespace BookStore
+namespace CoreLogic
 {
     public interface IBookRepository
     {

@@ -1,9 +1,10 @@
-﻿using System;
+﻿using CoreLogic.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BookStore
+namespace CoreLogic
 {
     public class BookRepository : IBookRepository
     {

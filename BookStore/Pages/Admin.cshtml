@@ -2,64 +2,61 @@
 @model BookStore.Pages.AdminModel
 @{
 }
-<style>
-    #btSaveBook {
-        margin-bottom: 10px;
-    }
-</style>
 
+
+<link rel="stylesheet" href="~/css/admin.css" />
 <script type="text/javascript" src="~/js/Admin/Main.js"></script>
 <div ng-app="myApp">
  <div class="container-fluid" ng-controller="AdminController">
-     <h3>Add new book, to store</h3>
-        <div class="row">
-            <div class="col s6">
-                <form>
-                    <div class="form-group">
-                        <label for="BookName">Book name</label>
-                        <input type="text" class="form-control" id="BookName" placeholder="Enter book name">
-                    </div>
-                    <div class="form-group">
-                        <label for="BookAuthor">Author</label>
-                        <input type="text" class="form-control" id="BookAuthor" placeholder="Book author">
-                    </div>
-                    <div class="form-group">
-                        <label for="BookPages">Pages total</label>
-                        <input type="text" class="form-control" id="BookPages" placeholder="Pages total">
-                    </div>
+     
+     <div id="mainRow" class="row">
+         <div class="col s10">
+             <div class="col s11"><h3>Add book to store</h3> </div>
 
-                    <button id="btSaveBook" type="submit" class="btn btn-primary">Save book</button>
+             <div id="addBookRow" class="col s4">
+                 <form>
+                     <div class="form-group">
+                         <label for="BookName">Book name</label>
+                         <input type="text" class="form-control" id="BookName" placeholder="Enter book name" ng-model="newBook.name">
+                     </div>
+                     <div class="form-group">
+                         <label for="BookAuthor">Author</label>
+                         <input type="text" class="form-control" id="BookAuthor" placeholder="Book author" ng-model="newBook.author">
+                     </div>
+                     <div class="form-group">
+                         <label for="BookPages">Pages total</label>
+                         <input type="number" class="form-control" id="BookPages" placeholder="Pages total" ng-model="newBook.pages">
+                     </div>
 
-
-                </form>
-            </div>
-
-            <div class="col s6">
-
-                <table width="200" border="1">
-                    <tbody>
-
-                        <tr>
-                            <th scope="col">Name</th>
-                            <th scope="col">Author</th>
-                            <th>Total Pages</th>
-                        </tr>
-                        
-                        <tr ng-repeat="book in books" id="{{book.id}}">
-                            
-                            <td>{{book.name}}</td>
-                            <td>{{book.author}}</td>
-                            <td>{{book.pages}}</td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-
-        </div>
+                     <button id="btSaveBook" type="submit" class="btn btn-primary" ng-click="addNewBook($event)">Save book</button>
 
 
+                 </form>
+             </div>
 
+             <div id="booksRow" class="col s7">
+
+                 <table id="booksTable" class="striped" width="200">
+                     <tbody>
+
+                         <tr>
+                             <th scope="col">Name</th>
+                             <th scope="col">Author</th>
+                             <th>Total Pages</th>
+                         </tr>
+
+                         <tr ng-repeat="book in books" id="{{book.id}}">
+
+                             <td>{{book.name}}</td>
+                             <td>{{book.author}}</td>
+                             <td>{{book.pages}}</td>
+                         </tr>
+
+                     </tbody>
+                 </table>
+             </div>
+         </div>
+     </div>
 
     </div>
 

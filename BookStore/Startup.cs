@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.Data.SQLite;
 using System.Linq;
 using System.Threading.Tasks;
+using DataAccesLier;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,7 +28,7 @@ namespace BookStore
             services.AddRazorPages().AddRazorRuntimeCompilation();
             services.AddControllers();
             services.AddSwaggerGen();
-
+            services.AddSingleton(typeof(SQLiteConnection), ProjectDb.CreateConnaction());
         }
 
         public void CreateTestBooks() { 
@@ -37,7 +39,7 @@ namespace BookStore
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
 
-            var con = new DataAccesLier.Connection();
+            var con = new DataAccesLier.ProjectDb();
             
             app.UseSwagger();
 

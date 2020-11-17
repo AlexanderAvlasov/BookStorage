@@ -10,6 +10,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStore", "BookStore\Book
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccesLier", "DataAccesLier\DataAccesLier.csproj", "{D3CBD580-EFC1-4919-BDBC-37D7741228B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreLogic", "CoreLogic\CoreLogic.csproj", "{8A59A4BD-FC65-46D1-89C8-528EDDD870C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{D3CBD580-EFC1-4919-BDBC-37D7741228B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3CBD580-EFC1-4919-BDBC-37D7741228B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3CBD580-EFC1-4919-BDBC-37D7741228B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A59A4BD-FC65-46D1-89C8-528EDDD870C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A59A4BD-FC65-46D1-89C8-528EDDD870C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A59A4BD-FC65-46D1-89C8-528EDDD870C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A59A4BD-FC65-46D1-89C8-528EDDD870C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
